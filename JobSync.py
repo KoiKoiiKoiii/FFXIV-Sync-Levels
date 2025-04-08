@@ -27,7 +27,7 @@ jobs_koi = {
     "WHM": 100, "SCH": 100, "AST": 100, "SGE": 100,
     "MNK": 61, "DRG": 63, "NIN": 65, "SAM": 100, "RPR": 100, "VPR": 100,
     "BRD": 100, "MCH": 86, "DNC": 74,
-    "BLM": 66, "SMN": 100, "RDM": 59, "PCT": 100
+    "BLM": 66, "SMN": 100, "RDM": 60, "PCT": 100
 }
 
 job_roles = {
@@ -100,4 +100,4 @@ def createPairs(jobs, jobsTali, jobsKoi, jobRoles, threshold=5):
         print(f"Koi {koiJob} {koiLvl} + Tali {taliJob} {taliLvl}; \nLevel difference of: {delta}\n")
 
 
-createPairs(jobs, jobs_koi, jobs_tali, job_roles)
+createPairs(jobs, jobs_tali, jobs_koi, job_roles)
